@@ -1,0 +1,27 @@
+<HTML>
+  <body>
+    <p align="center"><b><font size="5">BÁO CÁO DANH MỤC NHÀ CUNG CẤP</font></b></p>
+    <p align="center">
+      <table border="1" width="100%" id="table1" style="border-collapse: collapse" bordercolor="#000000">
+        <tr>
+          <td align="center"><b>Mã NCC</b></td>
+          <td align="center"><b>Tên NCC</b></td>
+          <td align="center"><b>Người liên hệ</b></td>
+          <td align="center"><b>Điện thoại</b></td>
+          <td align="center"><b>Địa chỉ</b></td>
+          <td align="center"><b>Email</b></td>
+        </tr>
+        <tr>
+          <td align="left">0001</td>
+          <td align="left">Công ty TNHH Cocacola Việt Nam</td>
+          <td align="left">Nguyễn Hùng Minh</td>
+          <td align="left">043123323</td>
+          <td align="left">Số 1 Trần Khát Chân</td>
+          <td align="left">minh.hung@cocacola.com</td>
+        </tr>
+      </table>
+    </p>
+    <p align="left"></p>
+  </body>
+</HTML>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <struct_DM_VAT_TAX>
+    <TABLE_ID>DM_VAT_TAX</TABLE_ID>
+    <FIELD_ID>RATE</FIELD_ID>
+    <FIELD_NAME>Số thuế</FIELD_NAME>
+    <FIELD_TYPE>int</FIELD_TYPE>
+    <FIELD_MAX>2</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_VAT_TAX>
+  <struct_DM_VAT_TAX>
+    <TABLE_ID>DM_VAT_TAX</TABLE_ID>
+    <FIELD_ID>VAT_TAX_ID</FIELD_ID>
+    <FIELD_NAME>Mã Thuế</FIELD_NAME>
+    <FIELD_TYPE>int</FIELD_TYPE>
+    <FIELD_MAX>2</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_VAT_TAX>
+  <struct_DM_VAT_TAX>
+    <TABLE_ID>DM_VAT_TAX</TABLE_ID>
+    <FIELD_ID>VAT_TAX_NAME</FIELD_ID>
+    <FIELD_NAME>Tên Thuế</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>50</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_VAT_TAX>
+</DocumentElement>

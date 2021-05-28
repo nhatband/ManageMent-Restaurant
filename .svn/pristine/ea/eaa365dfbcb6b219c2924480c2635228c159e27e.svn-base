@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using QLNH.CoSo;
+
+namespace QLNH.HeThong
+{
+    public partial class FrmChangePass : FrmEditDetail
+    {
+        public FrmChangePass(NHMain nhmain, DataRow datarow, string nametable, bool IsNew)
+            : base(nhmain, nametable, datarow)
+        {
+            InitializeComponent();
+            this.isNew = IsNew;
+            SetControl();
+        }
+        public override void SetControl()
+        {
+            this.txtUser.Text = NHMain.UserInfo.User_Id;
+            //this.txtItem_Class_id.Text = DataRow["ITEM_CLASS_ID"].ToString();
+            //this.txtItem_Class_Name.Text = DataRow["ITEM_CLASS_NAME"].ToString();
+        }
+        public override void SaveRecord()
+        {
+            if (this.txtReNew.Text == this.txtCurr.Text)
+            {
+                DataRow["USER_ID"] = this.txtUser.Text;
+                DataRow["PASSWORD"] = this.txtReNew;
+                base.SaveRecord();
+            }
+            else 
+            {
+                MessageBox.Show("Mật khẩu không khớp hoặc không trùng");
+            }
+            
+        }
+    }
+}

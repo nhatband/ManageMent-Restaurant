@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<DM_LEVELSS>
+  <DM_LEVELS>
+    <LEVEL_ID>0</LEVEL_ID>
+    <LEVEL_NAME>Nhân viên bàn</LEVEL_NAME>
+  </DM_LEVELS>
+  <DM_LEVELS>
+    <LEVEL_ID>1</LEVEL_ID>
+    <LEVEL_NAME>Nhân viên Bếp</LEVEL_NAME>
+  </DM_LEVELS>
+  <DM_LEVELS>
+    <LEVEL_ID>2</LEVEL_ID>
+    <LEVEL_NAME>Nhân viên quầy bar</LEVEL_NAME>
+  </DM_LEVELS>
+  <DM_LEVELS>
+    <LEVEL_ID>3</LEVEL_ID>
+    <LEVEL_NAME>Quản lý bếp</LEVEL_NAME>
+  </DM_LEVELS>
+  <DM_LEVELS>
+    <LEVEL_ID>4</LEVEL_ID>
+    <LEVEL_NAME>Quản lý bộ phận bar</LEVEL_NAME>
+  </DM_LEVELS>
+</DM_LEVELSS>

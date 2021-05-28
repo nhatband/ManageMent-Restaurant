@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <struct_DM_TABLES>
+    <TABLE_ID>DM_TABLES</TABLE_ID>
+    <FIELD_ID>ACTIVE</FIELD_ID>
+    <FIELD_NAME>Hoạt động</FIELD_NAME>
+    <FIELD_TYPE>smallint</FIELD_TYPE>
+    <FIELD_MAX>1</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_TABLES>
+  <struct_DM_TABLES>
+    <TABLE_ID>DM_TABLES</TABLE_ID>
+    <FIELD_ID>RANK_ID</FIELD_ID>
+    <FIELD_NAME>Thứ hạng bàn</FIELD_NAME>
+    <FIELD_TYPE>smallint</FIELD_TYPE>
+    <FIELD_MAX>1</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_TABLES>
+  <struct_DM_TABLES>
+    <TABLE_ID>DM_TABLES</TABLE_ID>
+    <FIELD_ID>TABLE_ID</FIELD_ID>
+    <FIELD_NAME>Mã bàn</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>20</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_TABLES>
+  <struct_DM_TABLES>
+    <TABLE_ID>DM_TABLES</TABLE_ID>
+    <FIELD_ID>TABLE_NAME</FIELD_ID>
+    <FIELD_NAME>Tên bàn</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>50</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_TABLES>
+  <struct_DM_TABLES>
+    <TABLE_ID>DM_TABLES</TABLE_ID>
+    <FIELD_ID>TOTAL_CHAIR</FIELD_ID>
+    <FIELD_NAME>Số ghế</FIELD_NAME>
+    <FIELD_TYPE>smallint</FIELD_TYPE>
+    <FIELD_MAX>1</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_TABLES>
+</DocumentElement>

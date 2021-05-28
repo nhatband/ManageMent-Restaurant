@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<DM_EMPLOYEE_PARTS>
+  <DM_EMPLOYEE_PART>
+    <COMMENT>Nhân viên chính thức</COMMENT>
+    <END_TIME>4/25/2013 12:00:00 AM</END_TIME>
+    <PART_ID>0</PART_ID>
+    <PR_KEY>0</PR_KEY>
+    <START_TIME>4/25/2012 12:00:00 AM</START_TIME>
+    <USER_ID>minwood</USER_ID>
+  </DM_EMPLOYEE_PART>
+</DM_EMPLOYEE_PARTS>

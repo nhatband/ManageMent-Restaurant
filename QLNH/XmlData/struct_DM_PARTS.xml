@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <struct_DM_PARTS>
+    <TABLE_ID>DM_PARTS</TABLE_ID>
+    <FIELD_ID>FROM_TIME</FIELD_ID>
+    <FIELD_NAME>Từ giờ</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>50</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_PARTS>
+  <struct_DM_PARTS>
+    <TABLE_ID>DM_PARTS</TABLE_ID>
+    <FIELD_ID>PART_ID</FIELD_ID>
+    <FIELD_NAME>Mã ca</FIELD_NAME>
+    <FIELD_TYPE>smallint</FIELD_TYPE>
+    <FIELD_MAX>1</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_PARTS>
+  <struct_DM_PARTS>
+    <TABLE_ID>DM_PARTS</TABLE_ID>
+    <FIELD_ID>PART_NAME</FIELD_ID>
+    <FIELD_NAME>Tên ca</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>50</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_PARTS>
+  <struct_DM_PARTS>
+    <TABLE_ID>DM_PARTS</TABLE_ID>
+    <FIELD_ID>TO_TIME</FIELD_ID>
+    <FIELD_NAME>Đến giờ</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>50</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_PARTS>
+</DocumentElement>

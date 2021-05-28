@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="MQ_Service.Sv" CodeBehind="Sv.svc.cs" %>

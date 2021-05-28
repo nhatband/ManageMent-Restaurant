@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes"?>
+<DM_EMPLOYEESS>
+  <DM_EMPLOYEES>
+    <IS_ONLINE>False</IS_ONLINE>
+    <LEVEL_ID>0</LEVEL_ID>
+    <PASSPORT>
+    </PASSPORT>
+    <PASSWORD>12</PASSWORD>
+    <PHONE> 123456789</PHONE>
+    <USER_ID>minwood</USER_ID>
+    <USER_NAME>minwood</USER_NAME>
+  </DM_EMPLOYEES>
+</DM_EMPLOYEESS>

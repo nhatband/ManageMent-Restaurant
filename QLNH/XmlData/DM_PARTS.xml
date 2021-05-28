@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<DM_PARTSS>
+  <DM_PARTS>
+    <PART_ID>0</PART_ID>
+    <PART_NAME>Ca sáng</PART_NAME>
+    <FROM_TIME>7h15</FROM_TIME>
+    <TO_TIME>11h15</TO_TIME>
+  </DM_PARTS>
+  <DM_PARTS>
+    <PART_ID>1</PART_ID>
+    <PART_NAME>Ca chiều</PART_NAME>
+    <FROM_TIME>11h30</FROM_TIME>
+    <TO_TIME>4h30</TO_TIME>
+  </DM_PARTS>
+  <DM_PARTS>
+    <PART_ID>2</PART_ID>
+    <PART_NAME>Ca tối</PART_NAME>
+    <FROM_TIME>4h45</FROM_TIME>
+    <TO_TIME>9h</TO_TIME>
+  </DM_PARTS>
+</DM_PARTSS>

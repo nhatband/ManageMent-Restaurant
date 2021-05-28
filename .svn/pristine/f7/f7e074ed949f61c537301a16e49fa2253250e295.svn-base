@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <struct_DM_LEVELS>
+    <TABLE_ID>DM_LEVELS</TABLE_ID>
+    <FIELD_ID>LEVEL_ID</FIELD_ID>
+    <FIELD_NAME>Mã chức danh</FIELD_NAME>
+    <FIELD_TYPE>smallint</FIELD_TYPE>
+    <FIELD_MAX>1</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_LEVELS>
+  <struct_DM_LEVELS>
+    <TABLE_ID>DM_LEVELS</TABLE_ID>
+    <FIELD_ID>LEVEL_NAME</FIELD_ID>
+    <FIELD_NAME>Tên chức danh</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>50</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_LEVELS>
+</DocumentElement>

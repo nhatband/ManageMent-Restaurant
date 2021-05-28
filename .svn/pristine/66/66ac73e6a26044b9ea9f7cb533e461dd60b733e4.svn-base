@@ -1,0 +1,305 @@
+﻿using System;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Collections.ObjectModel;
+using QLNH.CoSo;
+using QLNH.ThietKe.ObjectClass;
+using System.IO;
+using System.Windows.Media.Imaging;
+using System.Windows.Media;
+
+
+namespace QLNH.ThietKe
+{
+    /// <summary>
+    /// Interaction logic for iEnvironment.xaml
+    /// </summary>
+    public partial class iEnvironment
+    {
+        public iEnvironment()
+        {
+            InitializeComponent();
+            //scrollview.VerticalScrollBarVisibility = ScrollBarVisibility.Visible;
+        }
+
+        public ObservableCollection<Canvas> ObjectLayer = new ObservableCollection<Canvas>();
+        public ObservableCollection<Layer> Layers = new ObservableCollection<Layer>();
+        public ObservableCollection<iItem> ObjectItem = new ObservableCollection<iItem>();
+        public ObservableCollection<Item> Items = new ObservableCollection<Item>();
+        Point point;
+
+       public AdornerLayer aLayer;
+
+        bool _isDown;
+        bool _isDragging;
+       public bool selected = false;
+        public UIElement selectedElement = null;
+
+        Point _startPoint;
+        private double _originalLeft;
+        private double _originalTop;
+
+        private void GridDesign_MouseMove(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            point = new Point();
+            point = e.GetPosition(this);
+        }
+        public Point GetPoint()
+        {
+            return point;
+        }
+
+        public double LenWidth
+        {
+            get { return this.GridDesign.Width; }
+            set { this.GridDesign.Width = value; }
+        }
+        public double LenHeight
+        {
+            get { return this.GridDesign.Height; }
+            set { this.GridDesign.Height = value; }
+        }
+
+        public void LoadImage(byte[] source)
+        {
+            if (source.Length > 0)
+            {
+                MemoryStream ms = new MemoryStream(source);
+                System.Windows.Media.Imaging.BitmapFrame frame = System.Windows.Media.Imaging.BitmapFrame.Create(ms, BitmapCreateOptions.None, BitmapCacheOption.OnLoad);
+                ImageBrush brush = new ImageBrush();
+                brush.Stretch = Stretch.None;
+                brush.ImageSource = frame;
+                this.GridDesign.Background = brush;
+                brush.TileMode = TileMode.Tile;
+                brush.ViewboxUnits = BrushMappingMode.Absolute;
+                brush.AlignmentX = AlignmentX.Left;
+                brush.AlignmentY = AlignmentY.Top;
+                brush.Stretch = Stretch.None;
+                brush.Viewport = new Rect(0, 0, 0.05, 0.05);
+            }
+        }
+        #region Tải thành phần và các lớp lên môi trường thiết kế
+        public void BindData()
+        {
+            this.ObjectItem.Clear();
+            this.ObjectLayer.Clear();
+            LoadLayers();
+            LoadItems();
+        }
+        public void ClearAll()
+        {
+
+        }
+        public void LoadLayers()
+        {
+            foreach (Layer item in Layers)
+                AddLayer(item);
+        }
+        public void LoadItems()
+        {
+            foreach (Item item in Items)
+                AddItem(item);
+        }
+        public void AddLayer(Layer layer)
+        {
+            Canvas value = new Canvas();
+            Canvas.SetLeft(value, 0);
+            Canvas.SetTop(value, 0);
+            value.Name = "Layer_" + Functions.PasteString(layer.Layer_Id);
+            value.Tag = layer.Layer_Id;
+            value.Width = layer.Width;
+            value.Height = layer.Height;
+            value.Visibility = Functions.IsVisible(layer.Isvisible);
+            this.ObjectLayer.Add(value);
+            this.GridDesign.Children.Add(value);
+        }
+
+        iItem mitem;
+        public void AddItem(Item item)
+        {
+
+            foreach (Canvas i in ObjectLayer)
+            {
+                if (item.Layer == Functions.PasteDouble(i.Tag))
+                {
+                    mitem = new iItem(item);
+
+                    i.Children.Add(mitem);
+                    this.ObjectItem.Add(mitem);
+                    RefreshLayer(i);
+                    break;
+                }
+            }
+        }
+        public void RemoveItem()
+        {
+            if (selected)
+            {
+                selected = false;
+                if (selectedElement != null)
+                {
+                    this.ObjectItem.Remove((iItem)selectedElement);
+                    selectedElement = null;
+                }
+            }
+        }
+        #endregion
+
+        #region các sự kiện chuột và thiết kế
+        private bool _isRectMouseCapture = false;
+        private Point clickPosition;
+        void rect_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            _isRectMouseCapture = true;
+            (sender as FrameworkElement).CaptureMouse();
+            clickPosition = e.GetPosition(sender as UIElement);
+        }
+        void rect_MouseMove(object sender, MouseEventArgs e)
+        {
+
+            if (_isRectMouseCapture)
+            {
+                Point newPosition = e.GetPosition(this.ObjectLayer[0]);
+                (sender as FrameworkElement).SetValue(Canvas.LeftProperty, newPosition.X - clickPosition.X);//
+                (sender as FrameworkElement).SetValue(Canvas.TopProperty, newPosition.Y - clickPosition.Y);//
+            }
+        }
+        void rect_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            if (_isRectMouseCapture)
+            {
+                _isRectMouseCapture = false;
+                (sender as FrameworkElement).ReleaseMouseCapture();
+            }
+        }
+        public void RefreshLayer(Canvas layer)
+        {
+            foreach (UIElement i in layer.Children)
+            {
+                i.MouseLeftButtonDown += new MouseButtonEventHandler(rect_MouseLeftButtonDown);
+                i.MouseLeftButtonUp += new MouseButtonEventHandler(rect_MouseLeftButtonUp);
+                i.MouseMove += new MouseEventHandler(rect_MouseMove);
+            }
+        }
+        #endregion
+
+        public Canvas LayerSelected
+        {
+            get;
+            set;
+        }
+        #region Đổi kích cỡ
+        private void StopDragging()
+        {
+            if (_isDown)
+            {
+                _isDown = false;
+                _isDragging = false;
+            }
+        }
+
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.MouseLeftButtonDown += this.iItem_MouseLeftButtonDown;
+            this.MouseLeftButtonUp += this.iItem_MouseLeftButtonUp;
+            this.MouseMove += this.iItem_MouseMove;
+            this.MouseLeave += this.iItem_MouseLeave;
+
+            this.GridDesign.PreviewMouseLeftButtonDown += new MouseButtonEventHandler(LayoutRoot_PreviewMouseLeftButtonDown);
+            this.GridDesign.PreviewMouseLeftButtonUp += new MouseButtonEventHandler(LayoutRoot_PreviewMouseLeftButtonUp);
+        }
+
+        void LayoutRoot_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            StopDragging();
+            e.Handled = true;
+        }
+
+        void LayoutRoot_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Adorner[] adoner = null;
+            if (selected)
+            {
+                selected = false;
+                if (selectedElement != null)
+                {
+                    // Remove the adorner from the selected element
+                    adoner = this.aLayer.GetAdorners(this.selectedElement);
+                    if (this.aLayer != null)
+                    {
+                        if (adoner != null)
+                            this.aLayer.Remove(adoner[0]);
+                    }
+                    selectedElement = null;
+                }
+            }
+
+            // If any element except canvas is clicked, 
+            // assign the selected element and add the adorner
+            if (e.Source != GridDesign)
+            {
+                _isDown = true;
+                _startPoint = e.GetPosition(GridDesign);
+
+                selectedElement = e.Source as UIElement;
+
+                if (this.selectedElement != null)
+                {
+                    this._originalLeft = Canvas.GetLeft(this.selectedElement);
+                    this._originalTop = Canvas.GetTop(this.selectedElement);
+
+                    this.aLayer = AdornerLayer.GetAdornerLayer(this.selectedElement);
+                    this.aLayer.Add(new Resizing(this.selectedElement));
+                }
+                selected = true;
+                e.Handled = true;
+            }
+        }
+
+        void iItem_MouseLeave(object sender, MouseEventArgs e)
+        {
+            StopDragging();
+            e.Handled = true;
+        }
+
+        void iItem_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (_isDown)
+            {
+                if ((_isDragging == false) &&
+                    ((Math.Abs(e.GetPosition(this.GridDesign).X - _startPoint.X) > SystemParameters.MinimumHorizontalDragDistance) ||
+                    (Math.Abs(e.GetPosition(GridDesign).Y - _startPoint.Y) > SystemParameters.MinimumVerticalDragDistance)))
+                    _isDragging = true;
+
+                if (_isDragging)
+                {
+                    Point position = Mouse.GetPosition(GridDesign);
+                    Canvas.SetTop(selectedElement, position.Y - (_startPoint.Y - _originalTop));
+                    Canvas.SetLeft(selectedElement, position.X - (_startPoint.X - _originalLeft));
+                }
+            }
+        }
+
+        void iItem_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            StopDragging();
+            e.Handled = true;
+        }
+        void iItem_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (selected)
+            {
+                selected = false;
+                if (selectedElement != null)
+                {
+                    aLayer.Remove(aLayer.GetAdorners(selectedElement)[0]);
+                    selectedElement = null;
+                }
+            }
+        }
+        #endregion
+    }
+}

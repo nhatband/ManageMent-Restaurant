@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DM_PARTSS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="DM_PARTSS" msdata:IsDataSet="true" msdata:MainDataTable="DM_PARTS" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DM_PARTS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PART_ID" type="xs:short" minOccurs="0" />
+              <xs:element name="PART_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="FROM_TIME" type="xs:string" minOccurs="0" />
+              <xs:element name="TO_TIME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

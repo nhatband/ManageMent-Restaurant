@@ -1,0 +1,179 @@
+﻿namespace QLNH.DanhMuc
+{
+    partial class FrmDm_Table_Detail
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkActive = new System.Windows.Forms.CheckBox();
+            this.txtTotal_Chair = new System.Windows.Forms.NumericUpDown();
+            this.txtRank_id = new System.Windows.Forms.TextBox();
+            this.txtTable_Name = new System.Windows.Forms.TextBox();
+            this.txtTable_Id = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtValue_Id = new QLNH.CauTruc.iComboBox();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTotal_Chair)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtValue_Id);
+            this.groupBox1.Controls.Add(this.chkActive);
+            this.groupBox1.Controls.Add(this.txtTotal_Chair);
+            this.groupBox1.Controls.Add(this.txtRank_id);
+            this.groupBox1.Controls.Add(this.txtTable_Name);
+            this.groupBox1.Controls.Add(this.txtTable_Id);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(11, 39);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(260, 173);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Thông tin bàn";
+            // 
+            // chkActive
+            // 
+            this.chkActive.AutoSize = true;
+            this.chkActive.Location = new System.Drawing.Point(112, 149);
+            this.chkActive.Name = "chkActive";
+            this.chkActive.Size = new System.Drawing.Size(77, 17);
+            this.chkActive.TabIndex = 3;
+            this.chkActive.Text = "Hoạt động";
+            this.chkActive.UseVisualStyleBackColor = true;
+            // 
+            // txtTotal_Chair
+            // 
+            this.txtTotal_Chair.Location = new System.Drawing.Point(112, 97);
+            this.txtTotal_Chair.Name = "txtTotal_Chair";
+            this.txtTotal_Chair.Size = new System.Drawing.Size(140, 20);
+            this.txtTotal_Chair.TabIndex = 2;
+            // 
+            // txtRank_id
+            // 
+            this.txtRank_id.Location = new System.Drawing.Point(112, 72);
+            this.txtRank_id.Name = "txtRank_id";
+            this.txtRank_id.Size = new System.Drawing.Size(141, 20);
+            this.txtRank_id.TabIndex = 1;
+            // 
+            // txtTable_Name
+            // 
+            this.txtTable_Name.Location = new System.Drawing.Point(112, 47);
+            this.txtTable_Name.Name = "txtTable_Name";
+            this.txtTable_Name.Size = new System.Drawing.Size(141, 20);
+            this.txtTable_Name.TabIndex = 1;
+            // 
+            // txtTable_Id
+            // 
+            this.txtTable_Id.Location = new System.Drawing.Point(112, 20);
+            this.txtTable_Id.Name = "txtTable_Id";
+            this.txtTable_Id.Size = new System.Drawing.Size(141, 20);
+            this.txtTable_Id.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(18, 101);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Tổng số ghế";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(18, 75);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Thứ hạng";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tên bàn";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mã bàn";
+            // 
+            // txtValue_Id
+            // 
+            this.txtValue_Id.Caption = "Tầng";
+            this.txtValue_Id.FrmDetail = null;
+            this.txtValue_Id.LabelLengh = 95;
+            this.txtValue_Id.Location = new System.Drawing.Point(17, 123);
+            this.txtValue_Id.Name = "txtValue_Id";
+            this.txtValue_Id.Size = new System.Drawing.Size(235, 22);
+            this.txtValue_Id.TabIndex = 4;
+            // 
+            // FrmDm_Table_Detail
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(277, 217);
+            this.Controls.Add(this.groupBox1);
+            this.Name = "FrmDm_Table_Detail";
+            this.Text = "FrmDm_Item_Detail";
+            this.Controls.SetChildIndex(this.groupBox1, 0);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTotal_Chair)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtRank_id;
+        private System.Windows.Forms.TextBox txtTable_Name;
+        private System.Windows.Forms.TextBox txtTable_Id;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown txtTotal_Chair;
+        private System.Windows.Forms.CheckBox chkActive;
+        private CauTruc.iComboBox txtValue_Id;
+    }
+}

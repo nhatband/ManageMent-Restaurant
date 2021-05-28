@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="SALE_PRICE_NEAREST_VIEWS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="SALE_PRICE_NEAREST_VIEWS" msdata:IsDataSet="true" msdata:MainDataTable="SALE_PRICE_NEAREST_VIEW" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SALE_PRICE_NEAREST_VIEW">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PR_KEY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ITEM_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="PRICE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALID_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="USER_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTIVE" type="xs:short" minOccurs="0" />
+              <xs:element name="ITEM_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_CLASS_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

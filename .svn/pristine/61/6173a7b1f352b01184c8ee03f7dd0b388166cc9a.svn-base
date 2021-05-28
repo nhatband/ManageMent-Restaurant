@@ -1,0 +1,277 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using DevExpress.XtraEditors;
+using QLNH.CoSo;
+using QLNH.HeThong;
+using QLNH.DanhMuc;
+using QLNH.BanHang;
+
+namespace QLNH
+{
+    public partial class MainForm : DevExpress.XtraEditors.XtraForm
+    {
+        NHMain NHMain = new NHMain();
+        public MainForm()
+        {
+            InitializeComponent();
+
+            FrmLogin f = new FrmLogin(NHMain);
+            NHMain.MainForm = f;
+            f.ShowDialog();
+            itmKhachhang.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmKhachhang_LinkClicked);
+            itmBan.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmBan_LinkClicked);
+            itmNhaCungCap.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmNhaCungCap_LinkClicked);
+            itmCa.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmCa_LinkClicked);
+            itmTang.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmTang_LinkClicked);
+            itmLoaiHinhXuat.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmLoaiHinhXuat_LinkClicked);
+            itmLoaiNguyenLieu.LinkClicked +=new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmLoaiNguyenLieu_LinkClicked);
+            itmCus_Type.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmCus_Type_LinkClicked);
+            itmTypeCustomer.LinkClicked +=new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmTypeCustomer_LinkClicked);
+            itmPay_Type.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmPay_Type_LinkClicked);
+            itmVat_Tax.LinkClicked +=new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmVat_Tax_LinkClicked);
+            itmNguyenLieu.LinkClicked +=new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmNguyenLieu_LinkClicked);
+            itmDonViTinh.LinkClicked +=new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmDonViTinh_LinkClicked);
+
+            itmDmNhanVien.LinkClicked +=new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmDmNhanVien_LinkClicked);
+            itmCaLamViec.LinkClicked +=new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmCaLamViec_LinkClicked);
+            itmCapDo.LinkClicked +=new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmCapDo_LinkClicked);
+            itmKhoHang.LinkClicked +=new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmKhoHang_LinkClicked);
+            itmGiaBanHang.LinkClicked +=new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmGiaBanHang_LinkClicked);
+            itmDmChiNhanh.LinkClicked +=new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmDmChiNhanh_LinkClicked);
+
+            rptDsMonAn.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(rptDsMonAn_LinkClicked);
+            itmBanHang.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmBanHang_LinkClicked);
+            itmCheBien.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(itmCheBien_LinkClicked);
+        }
+       
+
+        void itmCheBien_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            //WebControlForm f = new WebControlForm();
+            //f.Show();
+            //f.Visible = true;
+        }
+
+        void itmBanHang_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmSale_Listing f = new FrmSale_Listing(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        
+
+        void rptDsMonAn_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+
+            FrmSale_Price_Nearest_List f = new FrmSale_Price_Nearest_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        public void ConfigButton(bool val, bool val2)
+        {
+            itmDangNhap.Enabled = val;
+            itmDangXuat.Enabled = val2;
+
+        }
+
+//Danh sách các Form trong danh mục:
+        // Gọi Form Danh mục loại khách hàng
+        void itmTypeCustomer_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_CustomerType_List f = new FrmDm_CustomerType_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        // Gọi Form đơn vị tính
+        void itmDonViTinh_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_Unit_List f = new FrmDm_Unit_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+
+        // Gọi Form danh mục loại hình thanh toán
+        void itmPay_Type_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_Pay_List f = new FrmDm_Pay_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        // Gọi Form danh mục loại khách hàng
+        void itmCus_Type_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_CustomerType_List f = new FrmDm_CustomerType_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+
+        }
+        // Gọi form loại hình xuất
+        void itmLoaiHinhXuat_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_ExportType_List f = new FrmDm_ExportType_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        // Gọi form danh mục tầng
+        void itmTang_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_Floors_List f = new FrmDm_Floors_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        // Gọi form danh mục ca làm việc
+        void itmCa_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_Parts_List f = new FrmDm_Parts_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        // Gọi form danh mục nhà cung cấp
+        void itmNhaCungCap_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_Providers_List f = new FrmDm_Providers_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+
+        }
+        // Gọi form danh mục bàn
+        void itmBan_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_Table_List f = new FrmDm_Table_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        // Gọi form danh mục khách hàng
+        private void itmKhachhang_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_Custumer_List f = new FrmDm_Custumer_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        // Gọi Form danh mục chi nhánh
+        void itmDmChiNhanh_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_WorkStations_List f = new FrmDm_WorkStations_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+
+        // Gọi form đăng nhập
+        private void itmDangNhap_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmLogin f = new FrmLogin(NHMain);
+            f.ShowDialog();
+            f.Visible = true;
+            ConfigButton(false, true);
+        }
+        // Gọi form Đăng xuất
+        private void itmDangXuat_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmLogin f = new FrmLogin(NHMain);
+            f.ShowDialog();
+            f.Visible = true;
+            ConfigButton(false, false);
+        }
+        // Gọi form nguyên liệu
+        private void itmNguyenLieu_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_Item_List f = new FrmDm_Item_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+
+        // Gọi form loại nguyên liệu
+        private void itmLoaiNguyenLieu_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_Item_Class_List f = new FrmDm_Item_Class_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        // Form mới
+        // Gọi Form danh sách nhân viên
+        void itmDmNhanVien_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_Employees_List f = new FrmDm_Employees_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        // Gọi Form danh mục ca làm việc
+        void itmCaLamViec_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_Employee_Part_List f = new FrmDm_Employee_Part_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        // Gọi Form danh mục cấp độ
+        void itmCapDo_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_Levels_List f = new FrmDm_Levels_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        // Gọi Form danh mục kho hàng
+        void itmKhoHang_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_Warehouses_List f = new FrmDm_Warehouses_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        // Gọi Form danh mục giá hàng bán
+        void itmGiaBanHang_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDmSale_Price_List f = new FrmDmSale_Price_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+        
+        // End
+       
+
+        private void itmDoiMatKhau_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            //DataTable dt = this.NHMain.GetDataByQuery("Select top 1 * from SYS_USER where USER_ID = '" + NHMain.UserInfo.User_Id + "'");
+
+            //FrmChangePass f = new FrmChangePass(NHMain,dt.Rows[0],"SYS_USER",false);
+            //f.MdiParent = this;
+            //f.Show();
+            //f.Visible = true;
+        }
+        // Gọi form loại thuế
+        private void itmVat_Tax_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            FrmDm_Vat_Tax_List f = new FrmDm_Vat_Tax_List(NHMain);
+            f.MdiParent = this;
+            f.Show();
+            f.Visible = true;
+        }
+
+
+
+         
+    }
+}

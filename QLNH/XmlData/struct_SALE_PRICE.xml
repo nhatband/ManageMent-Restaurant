@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <struct_SALE_PRICE>
+    <TABLE_ID>SALE_PRICE</TABLE_ID>
+    <FIELD_ID>ACTIVE</FIELD_ID>
+    <FIELD_NAME>Hoạt động</FIELD_NAME>
+    <FIELD_TYPE>smallint</FIELD_TYPE>
+    <FIELD_MAX>1</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_SALE_PRICE>
+  <struct_SALE_PRICE>
+    <TABLE_ID>SALE_PRICE</TABLE_ID>
+    <FIELD_ID>ITEM_ID</FIELD_ID>
+    <FIELD_NAME>Mã món</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>20</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_SALE_PRICE>
+  <struct_SALE_PRICE>
+    <TABLE_ID>SALE_PRICE</TABLE_ID>
+    <FIELD_ID>PR_KEY</FIELD_ID>
+    <FIELD_NAME>Khóa chính</FIELD_NAME>
+    <FIELD_TYPE>money</FIELD_TYPE>
+    <FIELD_MAX>4</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_SALE_PRICE>
+  <struct_SALE_PRICE>
+    <TABLE_ID>SALE_PRICE</TABLE_ID>
+    <FIELD_ID>PRICE</FIELD_ID>
+    <FIELD_NAME>Đơn giá</FIELD_NAME>
+    <FIELD_TYPE>money</FIELD_TYPE>
+    <FIELD_MAX>4</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_SALE_PRICE>
+  <struct_SALE_PRICE>
+    <TABLE_ID>SALE_PRICE</TABLE_ID>
+    <FIELD_ID>USER_ID</FIELD_ID>
+    <FIELD_NAME>Mã nhân viên</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>20</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_SALE_PRICE>
+  <struct_SALE_PRICE>
+    <TABLE_ID>SALE_PRICE</TABLE_ID>
+    <FIELD_ID>VALID_DATE</FIELD_ID>
+    <FIELD_NAME>Ngày hiệu lực</FIELD_NAME>
+    <FIELD_TYPE>smalldatetime</FIELD_TYPE>
+    <FIELD_MAX>2</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_SALE_PRICE>
+</DocumentElement>

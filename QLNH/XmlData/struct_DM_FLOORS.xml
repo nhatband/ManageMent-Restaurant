@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <struct_DM_FLOORS>
+    <TABLE_ID>DM_FLOORS</TABLE_ID>
+    <FIELD_ID>VALUE_ID</FIELD_ID>
+    <FIELD_NAME>Mã vị trí</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>20</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_FLOORS>
+  <struct_DM_FLOORS>
+    <TABLE_ID>DM_FLOORS</TABLE_ID>
+    <FIELD_ID>VALUE_NAME</FIELD_ID>
+    <FIELD_NAME>Tên vị trí</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>50</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_FLOORS>
+  <struct_DM_FLOORS>
+    <TABLE_ID>DM_FLOORS</TABLE_ID>
+    <FIELD_ID>VALUE_PARENT_ID</FIELD_ID>
+    <FIELD_NAME>Thuộc nhóm vị trí gốc</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>20</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_FLOORS>
+  <struct_DM_FLOORS>
+    <TABLE_ID>DM_FLOORS</TABLE_ID>
+    <FIELD_ID>VALUE_TYPE</FIELD_ID>
+    <FIELD_NAME>Kiểu vị trí</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>20</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_FLOORS>
+</DocumentElement>

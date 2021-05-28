@@ -1,0 +1,195 @@
+﻿namespace QLNH.BanHang
+{
+    partial class FrmSale
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.cboExportType_Id = new QLNH.CauTruc.iComboBox();
+            this.cboPayType_Id = new QLNH.CauTruc.iComboBox();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.cboTable_Id = new QLNH.CauTruc.iComboBox();
+            this.cboCustomer_id = new QLNH.CauTruc.iComboBox();
+            this.txtUser_Id = new QLNH.CauTruc.iTextBox();
+            this.txtComment = new QLNH.CauTruc.iTextBox();
+            this.txtTranDate = new QLNH.CauTruc.iCandenla();
+            this.txtTranNo = new QLNH.CauTruc.iTextBox();
+            this.txtCus_Tra = new QLNH.CauTruc.iSpinText();
+            this.MainPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // MainPanel
+            // 
+            this.MainPanel.Controls.Add(this.txtCus_Tra);
+            this.MainPanel.Controls.Add(this.groupControl2);
+            this.MainPanel.Controls.Add(this.groupControl1);
+            this.MainPanel.Controls.Add(this.txtUser_Id);
+            this.MainPanel.Controls.Add(this.txtComment);
+            this.MainPanel.Controls.Add(this.txtTranDate);
+            this.MainPanel.Controls.Add(this.txtTranNo);
+            this.MainPanel.Size = new System.Drawing.Size(563, 194);
+            // 
+            // groupControl2
+            // 
+            this.groupControl2.Controls.Add(this.cboExportType_Id);
+            this.groupControl2.Controls.Add(this.cboPayType_Id);
+            this.groupControl2.Location = new System.Drawing.Point(285, 34);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(272, 91);
+            this.groupControl2.TabIndex = 9;
+            this.groupControl2.Text = "Thanh toán";
+            // 
+            // cboExportType_Id
+            // 
+            this.cboExportType_Id.Caption = "Hình thức xuất";
+            this.cboExportType_Id.FrmDetail = null;
+            this.cboExportType_Id.LabelLengh = 95;
+            this.cboExportType_Id.Location = new System.Drawing.Point(5, 61);
+            this.cboExportType_Id.Name = "cboExportType_Id";
+            this.cboExportType_Id.Size = new System.Drawing.Size(258, 22);
+            this.cboExportType_Id.TabIndex = 3;
+            // 
+            // cboPayType_Id
+            // 
+            this.cboPayType_Id.Caption = "Hình thức th.toán";
+            this.cboPayType_Id.FrmDetail = null;
+            this.cboPayType_Id.LabelLengh = 95;
+            this.cboPayType_Id.Location = new System.Drawing.Point(5, 33);
+            this.cboPayType_Id.Name = "cboPayType_Id";
+            this.cboPayType_Id.Size = new System.Drawing.Size(258, 22);
+            this.cboPayType_Id.TabIndex = 2;
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.Controls.Add(this.cboTable_Id);
+            this.groupControl1.Controls.Add(this.cboCustomer_id);
+            this.groupControl1.Location = new System.Drawing.Point(2, 34);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(277, 91);
+            this.groupControl1.TabIndex = 8;
+            this.groupControl1.Text = "Khách hàng";
+            // 
+            // cboTable_Id
+            // 
+            this.cboTable_Id.Caption = "Bàn";
+            this.cboTable_Id.FrmDetail = null;
+            this.cboTable_Id.LabelLengh = 95;
+            this.cboTable_Id.Location = new System.Drawing.Point(10, 61);
+            this.cboTable_Id.Name = "cboTable_Id";
+            this.cboTable_Id.Size = new System.Drawing.Size(258, 22);
+            this.cboTable_Id.TabIndex = 3;
+            // 
+            // cboCustomer_id
+            // 
+            this.cboCustomer_id.Caption = "Khách hàng";
+            this.cboCustomer_id.FrmDetail = null;
+            this.cboCustomer_id.LabelLengh = 95;
+            this.cboCustomer_id.Location = new System.Drawing.Point(10, 33);
+            this.cboCustomer_id.Name = "cboCustomer_id";
+            this.cboCustomer_id.Size = new System.Drawing.Size(258, 22);
+            this.cboCustomer_id.TabIndex = 2;
+            // 
+            // txtUser_Id
+            // 
+            this.txtUser_Id.Caption = "Người lập";
+            this.txtUser_Id.Location = new System.Drawing.Point(290, 131);
+            this.txtUser_Id.Name = "txtUser_Id";
+            this.txtUser_Id.Size = new System.Drawing.Size(258, 22);
+            this.txtUser_Id.TabIndex = 7;
+            this.txtUser_Id.TextWidthLengh = 53;
+            // 
+            // txtComment
+            // 
+            this.txtComment.Caption = "Ghi chú";
+            this.txtComment.Location = new System.Drawing.Point(11, 159);
+            this.txtComment.Name = "txtComment";
+            this.txtComment.Size = new System.Drawing.Size(537, 22);
+            this.txtComment.TabIndex = 4;
+            this.txtComment.TextWidthLengh = 440;
+            // 
+            // txtTranDate
+            // 
+            this.txtTranDate.Caption = "Ngày chứng từ";
+            this.txtTranDate.LabelLengh = 53;
+            this.txtTranDate.Location = new System.Drawing.Point(290, 6);
+            this.txtTranDate.Name = "txtTranDate";
+            this.txtTranDate.Size = new System.Drawing.Size(258, 22);
+            this.txtTranDate.TabIndex = 5;
+            // 
+            // txtTranNo
+            // 
+            this.txtTranNo.Caption = "Số chứng từ";
+            this.txtTranNo.Location = new System.Drawing.Point(12, 6);
+            this.txtTranNo.Name = "txtTranNo";
+            this.txtTranNo.Size = new System.Drawing.Size(258, 22);
+            this.txtTranNo.TabIndex = 6;
+            this.txtTranNo.TextWidthLengh = 53;
+            // 
+            // txtCus_Tra
+            // 
+            this.txtCus_Tra.Caption = "Khách trả";
+            this.txtCus_Tra.LabelLengh = 53;
+            this.txtCus_Tra.Location = new System.Drawing.Point(11, 131);
+            this.txtCus_Tra.Name = "txtCus_Tra";
+            this.txtCus_Tra.Size = new System.Drawing.Size(258, 20);
+            this.txtCus_Tra.TabIndex = 10;
+            // 
+            // FrmSale
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(563, 478);
+            this.Name = "FrmSale";
+            this.Text = "FrmSale";
+            this.MainPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private DevExpress.XtraEditors.GroupControl groupControl2;
+        private CauTruc.iComboBox cboExportType_Id;
+        private CauTruc.iComboBox cboPayType_Id;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private CauTruc.iComboBox cboTable_Id;
+        private CauTruc.iComboBox cboCustomer_id;
+        private CauTruc.iTextBox txtUser_Id;
+        private CauTruc.iTextBox txtComment;
+        private CauTruc.iCandenla txtTranDate;
+        private CauTruc.iTextBox txtTranNo;
+        private CauTruc.iSpinText txtCus_Tra;
+    }
+}

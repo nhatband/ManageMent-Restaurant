@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <struct_DM_PAY_TYPE>
+    <TABLE_ID>DM_PAY_TYPE</TABLE_ID>
+    <FIELD_ID>PAY_TYPE_ID</FIELD_ID>
+    <FIELD_NAME>Mã loại hình thanh toán</FIELD_NAME>
+    <FIELD_TYPE>int</FIELD_TYPE>
+    <FIELD_MAX>2</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_PAY_TYPE>
+  <struct_DM_PAY_TYPE>
+    <TABLE_ID>DM_PAY_TYPE</TABLE_ID>
+    <FIELD_ID>PAY_TYPE_NAME</FIELD_ID>
+    <FIELD_NAME>Tên loại hình thanh toán</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>50</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_PAY_TYPE>
+</DocumentElement>

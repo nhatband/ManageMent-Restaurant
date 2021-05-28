@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <struct_DM_UNIT>
+    <TABLE_ID>DM_UNIT</TABLE_ID>
+    <FIELD_ID>UNIT_ID</FIELD_ID>
+    <FIELD_NAME>Mã đơn vị tính</FIELD_NAME>
+    <FIELD_TYPE>int</FIELD_TYPE>
+    <FIELD_MAX>56</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_UNIT>
+  <struct_DM_UNIT>
+    <TABLE_ID>DM_UNIT</TABLE_ID>
+    <FIELD_ID>UNIT_NAME</FIELD_ID>
+    <FIELD_NAME>Tên đơn vị tính</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>231</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_UNIT>
+</DocumentElement>

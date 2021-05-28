@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<DM_PAY_TYPES>
+  <DM_PAY_TYPE>
+    <PAY_TYPE_ID>0</PAY_TYPE_ID>
+    <PAY_TYPE_NAME>Nợ</PAY_TYPE_NAME>
+  </DM_PAY_TYPE>
+  <DM_PAY_TYPE>
+    <PAY_TYPE_ID>1</PAY_TYPE_ID>
+    <PAY_TYPE_NAME>Trả tiền mặt</PAY_TYPE_NAME>
+  </DM_PAY_TYPE>
+  <DM_PAY_TYPE>
+    <PAY_TYPE_ID>2</PAY_TYPE_ID>
+    <PAY_TYPE_NAME>Trả qua thẻ tín dụng</PAY_TYPE_NAME>
+  </DM_PAY_TYPE>
+  <DM_PAY_TYPE>
+    <PAY_TYPE_ID>3</PAY_TYPE_ID>
+    <PAY_TYPE_NAME>Không phải trả</PAY_TYPE_NAME>
+  </DM_PAY_TYPE>
+</DM_PAY_TYPES>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="QueryDataMain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSQL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="redial" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryDataMainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryDataMainResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryDataInter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSQL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="redial" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryDataInterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryDataInterResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteInter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSQL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="redial" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteInterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteInterResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteMain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSQL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="redial" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteMainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteMainResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="QueryDataMainSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryDataMain" />
+  </wsdl:message>
+  <wsdl:message name="QueryDataMainSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryDataMainResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryDataInterSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryDataInter" />
+  </wsdl:message>
+  <wsdl:message name="QueryDataInterSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryDataInterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteInterSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteInter" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteInterSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteInterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteMainSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteMain" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteMainSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteMainResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WsSoap">
+    <wsdl:operation name="QueryDataMain">
+      <wsdl:input message="tns:QueryDataMainSoapIn" />
+      <wsdl:output message="tns:QueryDataMainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryDataInter">
+      <wsdl:input message="tns:QueryDataInterSoapIn" />
+      <wsdl:output message="tns:QueryDataInterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteInter">
+      <wsdl:input message="tns:ExecuteInterSoapIn" />
+      <wsdl:output message="tns:ExecuteInterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteMain">
+      <wsdl:input message="tns:ExecuteMainSoapIn" />
+      <wsdl:output message="tns:ExecuteMainSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsSoap" type="tns:WsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="QueryDataMain">
+      <soap:operation soapAction="http://tempuri.org/QueryDataMain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDataInter">
+      <soap:operation soapAction="http://tempuri.org/QueryDataInter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteInter">
+      <soap:operation soapAction="http://tempuri.org/ExecuteInter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteMain">
+      <soap:operation soapAction="http://tempuri.org/ExecuteMain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WsSoap12" type="tns:WsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="QueryDataMain">
+      <soap12:operation soapAction="http://tempuri.org/QueryDataMain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDataInter">
+      <soap12:operation soapAction="http://tempuri.org/QueryDataInter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteInter">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteInter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteMain">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteMain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Ws">
+    <wsdl:port name="WsSoap" binding="tns:WsSoap">
+      <soap:address location="http://localhost:49168/Ws.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WsSoap12" binding="tns:WsSoap12">
+      <soap12:address location="http://localhost:49168/Ws.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

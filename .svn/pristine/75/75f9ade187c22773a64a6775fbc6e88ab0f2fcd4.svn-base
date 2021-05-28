@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<DM_VAT_TAXS>
+  <DM_VAT_TAX>
+    <VAT_TAX_ID>0</VAT_TAX_ID>
+    <VAT_TAX_NAME>Không thuế</VAT_TAX_NAME>
+    <RATE>0</RATE>
+  </DM_VAT_TAX>
+  <DM_VAT_TAX>
+    <VAT_TAX_ID>1</VAT_TAX_ID>
+    <VAT_TAX_NAME>10% thuế</VAT_TAX_NAME>
+    <RATE>10</RATE>
+  </DM_VAT_TAX>
+  <DM_VAT_TAX>
+    <VAT_TAX_ID>2</VAT_TAX_ID>
+    <VAT_TAX_NAME>5% thuế</VAT_TAX_NAME>
+    <RATE>5</RATE>
+  </DM_VAT_TAX>
+  <DM_VAT_TAX>
+    <VAT_TAX_ID>3</VAT_TAX_ID>
+    <VAT_TAX_NAME>15% thuế</VAT_TAX_NAME>
+    <RATE>15</RATE>
+  </DM_VAT_TAX>
+  <DM_VAT_TAX>
+    <VAT_TAX_ID>4</VAT_TAX_ID>
+    <VAT_TAX_NAME>20% thuế</VAT_TAX_NAME>
+    <RATE>20</RATE>
+  </DM_VAT_TAX>
+  <DM_VAT_TAX>
+    <VAT_TAX_ID>5</VAT_TAX_ID>
+    <VAT_TAX_NAME>25% thuế</VAT_TAX_NAME>
+    <RATE>25</RATE>
+  </DM_VAT_TAX>
+  <DM_VAT_TAX>
+    <VAT_TAX_ID>6</VAT_TAX_ID>
+    <VAT_TAX_NAME>30% thuế</VAT_TAX_NAME>
+    <RATE>30</RATE>
+  </DM_VAT_TAX>
+</DM_VAT_TAXS>

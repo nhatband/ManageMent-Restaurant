@@ -1,0 +1,51 @@
+﻿<Window x:Class="QLNH.ThietKe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ThietKe="clr-namespace:QLNH.ThietKe"
+        Title="MainWindow"
+        Width="710"
+        Height="350"
+        WindowState="Maximized">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="271*" />
+        </Grid.RowDefinitions>
+        <Grid Name="grid1" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="230" />
+                <ColumnDefinition Width="483*" />
+            </Grid.ColumnDefinitions>
+            <ThietKe:iEnvironment x:Name="iE" Grid.Column="1" />
+            <Label Name="label1"
+                   Height="28"
+                   Margin="6,6,6,0"
+                   VerticalAlignment="Top"
+                   Content="Label" />
+        </Grid>
+        <ToolBar Name="Toolbar">
+            <ToolBar.Items>
+                <Button x:Name="AddNew"
+                        Height="48"
+                        Click="AddNew_Click"
+                         >
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal" >
+                            <Image Source="Resources/4462.png" Width="26" Stretch="UniformToFill" Name="iBNew" />
+                            <Label Content="Thêm mới vùng"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <Button x:Name="Save"
+                        Height="48"
+                        Click="Save_Click"
+                        Content="Lưu" />
+                <Button x:Name="Delete"
+                        Height="48"
+                        Click="Delete_Click"
+                        Content="Xóa" />
+                <WindowsFormsHost Width="200" Name="cboFloor" />
+            </ToolBar.Items>
+        </ToolBar>
+    </Grid>
+</Window>

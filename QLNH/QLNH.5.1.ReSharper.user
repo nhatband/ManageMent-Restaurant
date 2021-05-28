@@ -1,0 +1,273 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="private" priority="2" />
+      <Item value="double" priority="0" />
+      <Item value="FrmTransaction`0" priority="0" />
+      <Item value="NameField" priority="0" />
+      <Item value="string" priority="5" />
+      <Item value="true" priority="0" />
+      <Item value="public" priority="7" />
+      <Item value="virtual" priority="0" />
+      <Item value="void" priority="2" />
+      <Item value="LoadEmptyData`0" priority="0" />
+      <Item value="Modified" priority="0" />
+      <Item value="DataTable`0" priority="4" />
+      <Item value="try" priority="0" />
+      <Item value="return" priority="2" />
+      <Item value="null" priority="7" />
+      <Item value="MessageBox`0" priority="1" />
+      <Item value="DataTable" priority="0" />
+      <Item value="NHMain" priority="6" />
+      <Item value="NameTable_n" priority="0" />
+      <Item value="if" priority="7" />
+      <Item value="dt" priority="1" />
+      <Item value="foreach" priority="1" />
+      <Item value="DataRow`0" priority="1" />
+      <Item value="for" priority="0" />
+      <Item value="this" priority="10" />
+      <Item value="dr" priority="2" />
+      <Item value="break" priority="2" />
+      <Item value="LoadLayout`0" priority="0" />
+      <Item value="override" priority="2" />
+      <Item value="new" priority="5" />
+      <Item value="UserInfo" priority="0" />
+      <Item value="DataSet`0" priority="2" />
+      <Item value="IsNew" priority="0" />
+      <Item value="false" priority="1" />
+      <Item value="DataSet" priority="1" />
+      <Item value="ds" priority="0" />
+      <Item value="itmThietke" priority="0" />
+      <Item value="MainWindow" priority="0" />
+      <Item value="m" priority="1" />
+      <Item value="Visible" priority="0" />
+      <Item value="dataTable" priority="11" />
+      <Item value="bool" priority="0" />
+      <Item value="else" priority="1" />
+      <Item value="row" priority="1" />
+      <Item value="item" priority="0" />
+      <Item value="catch" priority="0" />
+      <Item value="Exception`0" priority="0" />
+      <Item value="ex" priority="0" />
+      <Item value="OpenFileDialog`0" priority="0" />
+      <Item value="OpenFileDialog" priority="0" />
+      <Item value="ofd" priority="3" />
+      <Item value="picFloor" priority="2" />
+      <Item value="LoadImage`0" priority="0" />
+      <Item value="photo" priority="0" />
+      <Item value="getFile" priority="0" />
+      <Item value="object" priority="1" />
+      <Item value="a" priority="0" />
+      <Item value="QLNH" priority="0" />
+      <Item value="sql" priority="1" />
+      <Item value="GetDataByQuery`0" priority="1" />
+      <Item value="dtt" priority="1" />
+      <Item value="data" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.LookUpEdit">
+      <Item value="EditValue" priority="1" />
+      <Item value="EditValueChanged" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:QLNH.CauTruc.iComboBox">
+      <Item value="ComboBoxEdit" priority="0" />
+      <Item value="EndEdit`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Data.DataRowState">
+      <Item value="Added" priority="1" />
+      <Item value="Modified" priority="0" />
+      <Item value="Deleted" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:QLNH.CoSo.NHMain">
+      <Item value="GetFields`0" priority="0" />
+      <Item value="UserInfo" priority="3" />
+      <Item value="UpdateDataTable`0" priority="1" />
+      <Item value="ExecuteNonQuery`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataTable">
+      <Item value="RowChanged" priority="0" />
+      <Item value="Rows" priority="5" />
+      <Item value="TableName" priority="2" />
+      <Item value="AcceptChanges`0" priority="1" />
+      <Item value="Clone`0" priority="0" />
+      <Item value="NewRow`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataRowCollection">
+      <Item value="Contains`0" priority="0" />
+      <Item value="Count" priority="0" />
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:QLNH.CoSo.FrmTransaction">
+      <Item value="Grid" priority="2" />
+      <Item value="gridView1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraGrid.Views.Grid.GridView">
+      <Item value="Columns" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraGrid.Columns.GridColumnCollection">
+      <Item value="ColumnByName`0" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraGrid.Columns.GridColumn">
+      <Item value="Caption" priority="1" />
+      <Item value="FieldName" priority="0" />
+      <Item value="VisibleIndex" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.TextEdit">
+      <Item value="EditValue" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:QLNH.CoSo.UserInfo">
+      <Item value="User_Id" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="DataBindings" priority="0" />
+      <Item value="Text" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ControlBindingsCollection">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:QLNH.HeThong.FrmChangePass">
+      <Item value="DataSet" priority="0" />
+      <Item value="txtReNew" priority="0" />
+      <Item value="DataTable" priority="0" />
+      <Item value="txtCurr" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataSet">
+      <Item value="Tables" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataTableCollection">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Trim`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraNavBar.NavBarItem">
+      <Item value="LinkClicked" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:QLNH.ThietKe.MainWindow">
+      <Item value="Visibility" priority="0" />
+      <Item value="Show`0" priority="0" />
+      <Item value="DataTable" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:QLNH.DanhMuc.FrmDm_Floors_Detail">
+      <Item value="picFloor" priority="0" />
+      <Item value="DataSet" priority="0" />
+      <Item value="NameTable" priority="0" />
+      <Item value="txtFileName" priority="1" />
+      <Item value="DataTable" priority="1" />
+      <Item value="NHMain" priority="0" />
+      <Item value="txtValue_Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.PictureEdit">
+      <Item value="DataBindings" priority="0" />
+      <Item value="Image" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.OpenFileDialog">
+      <Item value="ShowDialog`0" priority="0" />
+      <Item value="FileName" priority="2" />
+      <Item value="Filter" priority="0" />
+      <Item value="SafeFileName" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:QLNH.CauTruc.iTextBox">
+      <Item value="TextBoxEdit" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataRow">
+      <Item value="EndEdit`0" priority="0" />
+      <Item value="ItemArray" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:BanHang/f:FrmSale.cs" caret="824" fromTop="5" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:XmlData/f:DM_EMPLOYEES.xml" caret="0" fromTop="0" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:ThietKe/f:iItem.xaml" caret="704" fromTop="5" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:Functions.cs" caret="981" fromTop="16" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:ThietKe/d:ObjectClass/f:Resizing.cs" caret="6368" fromTop="9" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:ThietKe/f:iDesign.xaml.cs" caret="289" fromTop="13" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:ThietKe/f:iDesign.xaml" caret="770" fromTop="3" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:DanhMuc/f:FrmDm_Employees_Detail.cs" caret="1944" fromTop="22" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:ThietKe/f:MainWindow.xaml" caret="580" fromTop="4" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:ThietKe/f:iEnvironment.xaml" caret="342" fromTop="4" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:FrmDataList.cs" caret="4788" fromTop="14" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="2207" fromTop="26" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:DanhMuc/f:FrmDm_Floors_List.cs" caret="819" fromTop="19" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:DanhMuc/f:FrmDm_Floors_Detail.cs" caret="0" fromTop="0" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:ThietKe/f:MainWindow.xaml.cs" caret="3064" fromTop="7" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:uLogin.xaml.cs" caret="2924" fromTop="16" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/f:app.config" caret="312" fromTop="9" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:FrmDataList.designer.cs" caret="158" fromTop="7" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:FrmEditDetail.cs" caret="4671" fromTop="16" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:DanhMuc/f:FrmDm_Item_Class_List.cs" caret="466" fromTop="20" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:DanhMuc/f:FrmDm_Floors_Detail.Designer.cs" caret="8741" fromTop="146" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:FrmEditDetail.designer.cs" caret="675" fromTop="0" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:ThietKe/f:MapPoint.cs" caret="0" fromTop="0" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:ThietKe/f:iEnvironment.xaml.cs" caret="2697" fromTop="15" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:ThietKe/d:ObjectClass/f:Item.cs" caret="1000" fromTop="28" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/f:MainForm.cs" caret="2242" fromTop="16" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:ThietKe/f:iItem.xaml.cs" caret="2165" fromTop="11" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:ThietKe/d:ObjectClass/f:Layer.cs" caret="22" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:FrmDataList.cs" caret="4467" fromTop="7" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="230" fromTop="8" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="2171" fromTop="10" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="802" fromTop="6" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="680" fromTop="12" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="2171" fromTop="13" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="2206" fromTop="31" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="2237" fromTop="25" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="1272" fromTop="25" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/f:app.config" caret="108" fromTop="3" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="955" fromTop="16" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="3236" fromTop="34" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="3236" fromTop="19" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="3281" fromTop="21" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="3689" fromTop="10" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="4730" fromTop="26" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="322" fromTop="9" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="2327" fromTop="10" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="2117" fromTop="7" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:FrmDataList.cs" caret="4832" fromTop="15" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:FrmDataList.cs" caret="4959" fromTop="12" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:DanhMuc/f:FrmDm_Floors_Detail.cs" caret="3081" fromTop="7" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:DanhMuc/f:FrmDm_Floors_List.cs" caret="541" fromTop="18" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:uLogin.xaml.cs" caret="3145" fromTop="10" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:uLogin.xaml.cs" caret="2676" fromTop="10" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="2117" fromTop="34" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="1795" fromTop="23" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:NHMain.cs" caret="2049" fromTop="23" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:FrmDataList.cs" caret="4832" fromTop="18" />
+      <File id="04ACD057-1703-4976-8907-90B1900B171B/d:CoSo/f:FrmDataList.cs" caret="5022" fromTop="20" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <struct_DM_ITEM_CLASS>
+    <TABLE_ID>DM_ITEM_CLASS</TABLE_ID>
+    <FIELD_ID>ITEM_CLASS_ID</FIELD_ID>
+    <FIELD_NAME>Mã loại hàng hóa</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>20</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_ITEM_CLASS>
+  <struct_DM_ITEM_CLASS>
+    <TABLE_ID>DM_ITEM_CLASS</TABLE_ID>
+    <FIELD_ID>ITEM_CLASS_NAME</FIELD_ID>
+    <FIELD_NAME>Tên loại hàng hóa</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>50</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_ITEM_CLASS>
+</DocumentElement>

@@ -1,0 +1,12 @@
+D:\Đồ án thực tập\Code\Res_Manage\MQ_Service\bin\MQ_Service.dll
+D:\Đồ án thực tập\Code\Res_Manage\MQ_Service\bin\MQ_Service.pdb
+D:\Đồ án thực tập\Code\Res_Manage\MQ_Service\obj\Debug\ResolveAssemblyReference.cache
+D:\Đồ án thực tập\Code\Res_Manage\MQ_Service\obj\Debug\MQ_Service.dll
+D:\Đồ án thực tập\Code\Res_Manage\MQ_Service\obj\Debug\MQ_Service.pdb
+C:\Users\duyhd\Desktop\Projects\Res_Manage\MQ_Service\obj\Debug\MQ_Service.csprojAssemblyReference.cache
+C:\Users\duyhd\Desktop\Projects\Res_Manage\MQ_Service\obj\Debug\MQ_Service.csproj.CoreCompileInputs.cache
+C:\Users\duyhd\Desktop\Projects\Res_Manage\MQ_Service\obj\Debug\MQ_Service.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\MQ_Service\bin\MQ_Service.dll.config
+C:\Users\duyhd\Desktop\Projects\Res_Manage\MQ_Service\bin\MQ_Service.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\MQ_Service\bin\MQ_Service.pdb
+C:\Users\duyhd\Desktop\Projects\Res_Manage\MQ_Service\obj\Debug\MQ_Service.pdb

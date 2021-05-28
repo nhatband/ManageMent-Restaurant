@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04ACD057-1703-4976-8907-90B1900B171B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLNH</RootNamespace>
+    <AssemblyName>QLNH</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v10.2">
+      <HintPath>..\Dll\DevExpress.BonusSkins.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\Dll\DevExpress.Data.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.OfficeSkins.v10.2">
+      <HintPath>..\Dll\DevExpress.OfficeSkins.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v10.2.Adomd">
+      <HintPath>..\Dll\DevExpress.PivotGrid.v10.2.Adomd.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\Dll\DevExpress.Utils.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\Dll\DevExpress.XtraBars.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v10.2.Design">
+      <HintPath>..\Dll\DevExpress.XtraBars.v10.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\Dll\DevExpress.XtraEditors.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.2.Design">
+      <HintPath>..\Dll\DevExpress.XtraEditors.v10.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\Dll\DevExpress.XtraGrid.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v10.2.Design">
+      <HintPath>..\Dll\DevExpress.XtraGrid.v10.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\Dll\DevExpress.XtraNavBar.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v10.2.Design">
+      <HintPath>..\Dll\DevExpress.XtraNavBar.v10.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v10.2">
+      <HintPath>..\Dll\DevExpress.XtraPivotGrid.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v10.2.Design">
+      <HintPath>..\Dll\DevExpress.XtraPivotGrid.v10.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v10.2">
+      <HintPath>..\Dll\DevExpress.XtraPrinting.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v10.2.Design">
+      <HintPath>..\Dll\DevExpress.XtraPrinting.v10.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v10.2">
+      <HintPath>..\Dll\DevExpress.XtraReports.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v10.2.Design">
+      <HintPath>..\Dll\DevExpress.XtraReports.v10.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BanHang\FrmDatBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHang\FrmDatBan.Designer.cs">
+      <DependentUpon>FrmDatBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\FrmNhapNguyenLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHang\FrmNhapNguyenLieu.Designer.cs">
+      <DependentUpon>FrmNhapNguyenLieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\FrmSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHang\FrmSale.Designer.cs">
+      <DependentUpon>FrmSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\FrmSale_Listing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHang\FrmSale_Listing.Designer.cs">
+      <DependentUpon>FrmSale_Listing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\FrmSale_Price_Nearest_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHang\FrmSale_Price_Nearest_List.Designer.cs">
+      <DependentUpon>FrmSale_Price_Nearest_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\WebControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHang\WebControlForm.Designer.cs">
+      <DependentUpon>WebControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauTruc\ComboBoxTypeView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CauTruc\iCalculate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CauTruc\iCalculate.Designer.cs">
+      <DependentUpon>iCalculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauTruc\iSpinText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CauTruc\iSpinText.Designer.cs">
+      <DependentUpon>iSpinText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauTruc\iCandenla.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CauTruc\iCandenla.Designer.cs">
+      <DependentUpon>iCandenla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauTruc\iTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CauTruc\iTextBox.Designer.cs">
+      <DependentUpon>iTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauTruc\iComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CauTruc\iComboBox.Designer.cs">
+      <DependentUpon>iComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauTruc\ItemCombobox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoSo\FrmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoSo\FrmConfig.designer.cs">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoSo\FrmDataList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoSo\FrmDataList.designer.cs">
+      <DependentUpon>FrmDataList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoSo\FrmEditDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoSo\FrmEditDetail.designer.cs">
+      <DependentUpon>FrmEditDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoSo\FrmFinding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoSo\FrmFinding.Designer.cs">
+      <DependentUpon>FrmFinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoSo\FrmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoSo\FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoSo\FrmTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoSo\FrmTransaction.Designer.cs">
+      <DependentUpon>FrmTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoSo\NHMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoSo\ReportManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoSo\ReportManager.Designer.cs">
+      <DependentUpon>ReportManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoSo\uLogin.xaml.cs">
+      <DependentUpon>uLogin.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoSo\UserInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoSo\WorkingMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoSo\XmlExecute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDmSale_Price_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDmSale_Price_Detail.Designer.cs">
+      <DependentUpon>FrmDmSale_Price_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDmSale_Price_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDmSale_Price_List.Designer.cs">
+      <DependentUpon>FrmDmSale_Price_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_CustomerType_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_CustomerType_Detail.Designer.cs">
+      <DependentUpon>FrmDm_CustomerType_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_CustomerType_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_CustomerType_List.Designer.cs">
+      <DependentUpon>FrmDm_CustomerType_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Employees_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Employees_Detail.Designer.cs">
+      <DependentUpon>FrmDm_Employees_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Employees_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Employees_List.Designer.cs">
+      <DependentUpon>FrmDm_Employees_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Employee_Part_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Employee_Part_Detail.Designer.cs">
+      <DependentUpon>FrmDm_Employee_Part_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Employee_Part_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Employee_Part_List.Designer.cs">
+      <DependentUpon>FrmDm_Employee_Part_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Levels_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Levels_Detail.Designer.cs">
+      <DependentUpon>FrmDm_Levels_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Levels_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Levels_List.Designer.cs">
+      <DependentUpon>FrmDm_Levels_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Pay_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Pay_Detail.Designer.cs">
+      <DependentUpon>FrmDm_Pay_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Pay_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Pay_List.Designer.cs">
+      <DependentUpon>FrmDm_Pay_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Unit_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Unit_Detail.Designer.cs">
+      <DependentUpon>FrmDm_Unit_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Unit_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Unit_List.Designer.cs">
+      <DependentUpon>FrmDm_Unit_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Vat_Tax_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Vat_Tax_Detail.Designer.cs">
+      <DependentUpon>FrmDm_Vat_Tax_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Vat_Tax_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Vat_Tax_List.Designer.cs">
+      <DependentUpon>FrmDm_Vat_Tax_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Custumer_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Custumer_Detail.Designer.cs">
+      <DependentUpon>FrmDm_Custumer_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Custumer_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Custumer_List.Designer.cs">
+      <DependentUpon>FrmDm_Custumer_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_ExportType_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_ExportType_Detail.Designer.cs">
+      <DependentUpon>FrmDm_ExportType_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_ExportType_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_ExportType_List.Designer.cs">
+      <DependentUpon>FrmDm_ExportType_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Floors_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Floors_Detail.Designer.cs">
+      <DependentUpon>FrmDm_Floors_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Floors_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Floors_List.Designer.cs">
+      <DependentUpon>FrmDm_Floors_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Item_Class_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Item_Class_Detail.Designer.cs">
+      <DependentUpon>FrmDm_Item_Class_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Item_Class_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Item_Class_List.Designer.cs">
+      <DependentUpon>FrmDm_Item_Class_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Item_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Item_Detail.Designer.cs">
+      <DependentUpon>FrmDm_Item_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Item_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Item_List.Designer.cs">
+      <DependentUpon>FrmDm_Item_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Parts_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Parts_Detail.Designer.cs">
+      <DependentUpon>FrmDm_Parts_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Parts_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Parts_List.Designer.cs">
+      <DependentUpon>FrmDm_Parts_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Providers_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Providers_Detail.Designer.cs">
+      <DependentUpon>FrmDm_Providers_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Providers_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Providers_List.Designer.cs">
+      <DependentUpon>FrmDm_Providers_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Table_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Table_Detail.Designer.cs">
+      <DependentUpon>FrmDm_Table_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Table_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Table_List.Designer.cs">
+      <DependentUpon>FrmDm_Table_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Warehouses_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Warehouses_Detail.Designer.cs">
+      <DependentUpon>FrmDm_Warehouses_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Warehouses_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_Warehouses_List.Designer.cs">
+      <DependentUpon>FrmDm_Warehouses_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_WorkStations_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_WorkStations_Detail.Designer.cs">
+      <DependentUpon>FrmDm_WorkStations_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_WorkStations_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\FrmDm_WorkStations_List.Designer.cs">
+      <DependentUpon>FrmDm_WorkStations_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BanHang\FrmDatBan.resx">
+      <DependentUpon>FrmDatBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BanHang\FrmNhapNguyenLieu.resx">
+      <DependentUpon>FrmNhapNguyenLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BanHang\FrmSale.resx">
+      <DependentUpon>FrmSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BanHang\WebControlForm.resx">
+      <DependentUpon>WebControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauTruc\iCalculate.resx">
+      <DependentUpon>iCalculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauTruc\iSpinText.resx">
+      <DependentUpon>iSpinText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauTruc\iCandenla.resx">
+      <DependentUpon>iCandenla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauTruc\iTextBox.resx">
+      <DependentUpon>iTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauTruc\iComboBox.resx">
+      <DependentUpon>iComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoSo\FrmConfig.resx">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoSo\FrmDataList.resx">
+      <DependentUpon>FrmDataList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoSo\FrmEditDetail.resx">
+      <DependentUpon>FrmEditDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoSo\FrmFinding.resx">
+      <DependentUpon>FrmFinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoSo\FrmReport.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoSo\FrmTransaction.resx">
+      <DependentUpon>FrmTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoSo\ReportManager.resx">
+      <DependentUpon>ReportManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDmSale_Price_Detail.resx">
+      <DependentUpon>FrmDmSale_Price_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_CustomerType_Detail.resx">
+      <DependentUpon>FrmDm_CustomerType_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_Employees_Detail.resx">
+      <DependentUpon>FrmDm_Employees_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_Employee_Part_Detail.resx">
+      <DependentUpon>FrmDm_Employee_Part_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_Levels_Detail.resx">
+      <DependentUpon>FrmDm_Levels_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_Pay_Detail.resx">
+      <DependentUpon>FrmDm_Pay_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_Unit_Detail.resx">
+      <DependentUpon>FrmDm_Unit_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_Vat_Tax_Detail.resx">
+      <DependentUpon>FrmDm_Vat_Tax_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_Custumer_Detail.resx">
+      <DependentUpon>FrmDm_Custumer_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_ExportType_Detail.resx">
+      <DependentUpon>FrmDm_ExportType_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_Floors_Detail.resx">
+      <DependentUpon>FrmDm_Floors_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_Item_Class_Detail.resx">
+      <DependentUpon>FrmDm_Item_Class_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_Item_Detail.resx">
+      <DependentUpon>FrmDm_Item_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_Parts_Detail.resx">
+      <DependentUpon>FrmDm_Parts_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_Providers_Detail.resx">
+      <DependentUpon>FrmDm_Providers_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_Table_Detail.resx">
+      <DependentUpon>FrmDm_Table_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_Warehouses_Detail.resx">
+      <DependentUpon>FrmDm_Warehouses_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\FrmDm_WorkStations_Detail.resx">
+      <DependentUpon>FrmDm_WorkStations_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\Service\Ws.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="CoSo\uLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Service\Ws.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Service\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Service\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Service\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41841.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10671.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12941.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41581.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44621.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BaoCao\DM_CUSTOMERS.xslt" />
+    <Content Include="BaoCao\DM_EMPLOYEES.xslt" />
+    <Content Include="BaoCao\DM_PROVIDERS.xslt" />
+    <Content Include="BaoCao\SALE.xslt" />
+    <Content Include="BaoCao\SALE_M.xslt" />
+    <Content Include="BaoCao\SALE_PRICE_NEAREST_VIEW.xslt" />
+    <Content Include="BaoCao\TRAN_NO.xslt" />
+    <Content Include="XmlData\DM_CUSTOMERS.xml" />
+    <Content Include="XmlData\DM_CUSTOMER_TYPE.xml" />
+    <Content Include="XmlData\DM_EMPLOYEES.xml" />
+    <Content Include="XmlData\DM_EXPORT_TYPE.xml" />
+    <Content Include="XmlData\DM_FLOORS.xml" />
+    <Content Include="XmlData\DM_ITEM.xml" />
+    <Content Include="XmlData\DM_ITEM_CLASS.xml" />
+    <Content Include="XmlData\DM_LEVELS.xml" />
+    <Content Include="XmlData\DM_PARTS.xml" />
+    <Content Include="XmlData\DM_PAY_TYPE.xml" />
+    <Content Include="XmlData\DM_PROVIDERS.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XmlData\DM_TABLES.xml" />
+    <Content Include="XmlData\DM_UNIT.xml" />
+    <Content Include="XmlData\DM_VAT_TAX.xml" />
+    <Content Include="XmlData\DM_WAREHOUSES.xml" />
+    <Content Include="XmlData\SALE_M.xml" />
+    <Content Include="XmlData\SALE_PRICE.xml" />
+    <Content Include="XmlData\SALE_PRICE_NEAREST_VIEW.xml" />
+    <Content Include="XmlData\SALE_VIEW.xml" />
+    <Content Include="XmlData\struct_DM_CUSTOMERS.xml" />
+    <Content Include="XmlData\struct_DM_CUSTOMER_TYPE.xml" />
+    <Content Include="XmlData\struct_DM_EMPLOYEES.xml" />
+    <Content Include="XmlData\struct_DM_EMPLOYEE_PART.xml" />
+    <Content Include="XmlData\struct_DM_EXPORT_TYPE.xml" />
+    <Content Include="XmlData\struct_DM_FLOORS.xml" />
+    <Content Include="XmlData\struct_DM_ITEM.xml" />
+    <Content Include="XmlData\struct_DM_ITEM_CLASS.xml" />
+    <Content Include="XmlData\struct_DM_LEVELS.xml" />
+    <Content Include="XmlData\struct_DM_PARTS.xml" />
+    <Content Include="XmlData\struct_DM_PAY_TYPE.xml" />
+    <Content Include="XmlData\struct_DM_PROVIDERS.xml" />
+    <Content Include="XmlData\struct_DM_TABLES.xml" />
+    <Content Include="XmlData\struct_DM_UNIT.xml" />
+    <Content Include="XmlData\struct_DM_VAT_TAX.xml" />
+    <Content Include="XmlData\struct_DM_WAREHOUSES.xml" />
+    <Content Include="XmlData\struct_SALE_PRICE.xml" />
+    <Content Include="XmlData\struct_SALE_PRICE_NEAREST_VIEW.xml" />
+    <Content Include="XmlData\struct_SALE_VIEW.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

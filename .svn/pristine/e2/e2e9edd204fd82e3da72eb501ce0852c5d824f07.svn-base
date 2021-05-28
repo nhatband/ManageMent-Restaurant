@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using QLNH.CoSo;
+
+namespace QLNH.DanhMuc
+{
+    public partial class FrmDm_Floors_List : FrmDataList
+    {
+        public FrmDm_Floors_List(NHMain nhmain)
+            : base(nhmain, "DM_FLOORS")
+        {
+            InitializeComponent();
+        }
+        //public override void EditRecord()
+        //{
+
+        //    this.FrmEditDetail = new FrmDm_Floors_Detail(NHMain, this.GetDataRow(), "DM_FLOORS");
+        //    this.FrmEditDetail.ShowDialog();
+        //    this.Refresh();
+        //}
+        //public override void NewRecord()
+        //{
+        //    this.FrmEditDetail = new FrmDm_Floors_Detail(NHMain, this.NewRow(), "DM_FLOORS");
+        //    this.FrmEditDetail.ShowDialog();
+        //    this.Refresh();
+        //}
+    }
+}

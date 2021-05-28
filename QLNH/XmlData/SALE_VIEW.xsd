@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="SALE_VIEWS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="SALE_VIEWS" msdata:IsDataSet="true" msdata:MainDataTable="SALE_VIEW" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SALE_VIEW">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TRAN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="TRAN_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CUSTOMER_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="TABLE_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="PAY_TYPE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="COMMENT" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_PRICE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOTAL_CUSTOMER_PAY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EXPORT_TYPE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="IS_PROVISIONAL" type="xs:short" minOccurs="0" />
+              <xs:element name="PR_KEY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FR_KEY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LIST_ORDER" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ITEM_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="PRICE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AMOUNT" type="xs:int" minOccurs="0" />
+              <xs:element name="VAT_TAX_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="TABLE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_CHAIR" type="xs:short" minOccurs="0" />
+              <xs:element name="RANK_ID" type="xs:short" minOccurs="0" />
+              <xs:element name="ACTIVE" type="xs:short" minOccurs="0" />
+              <xs:element name="ITEM_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_CLASS_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ACTIVE_ITEM" type="xs:short" minOccurs="0" />
+              <xs:element name="VAT_TAX_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

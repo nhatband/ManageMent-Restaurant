@@ -1,0 +1,428 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DevExpress.XtraGrid.Columns;
+
+namespace QLNH.CoSo
+{
+    public partial class FrmTransaction : Form
+    {
+        public NHMain NHMain;
+        public DataTable DataTable;
+        public DataTable DataTable_n;
+        public DataSet DataSet;
+        public DataRow DataRow;
+        public string NameTable_1;
+        public string NameTable_n;
+        public bool isNew = false;
+        public string string_SQL_1;
+        public string string_SQL_n;
+        private BindingManagerBase bMgr;
+        public double PR_KEY = 0;
+        public FrmTransaction(NHMain nhmain, DataSet dataset, string nametable, string nametable_n, double pr_key)
+        {
+            NHMain = nhmain;
+            NameTable_1 = nametable;
+            NameTable_n = nametable_n;
+            PR_KEY = pr_key;
+            this.DataSet = new System.Data.DataSet();
+            //this.LoadEmptyData();
+            LoadDataByPr_Key(PR_KEY);
+            InitializeComponent();
+            //////////////////////////
+            bMgr = this.BindingContext[DataSet, nametable];
+            bMgr.Position = 0;
+            this.gridView1.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(gridView1_CellValueChanged);
+            ///////////////////////////////
+            //BindGrid();
+        }
+        public FrmTransaction(NHMain nhmain, DataSet dataset, string nametable, string nametable_n, bool isNew)
+        {
+            NHMain = nhmain;
+            NameTable_1 = nametable;
+            NameTable_n = nametable_n;
+            this.DataSet = new System.Data.DataSet();
+            InitializeComponent();
+            CreateTran();
+            this.gridView1.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(gridView1_CellValueChanged);
+
+        }
+
+        void gridView1_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
+        {
+            GridChanged(e.Column, e.Value);
+        }
+
+        public virtual void GridChanged(GridColumn column, object value)
+        {
+
+        }
+        public FrmTransaction()
+        {
+            InitializeComponent();
+        }
+        public virtual void CreateTran()
+        {
+            ClearAll();
+            LoadEmptyData();
+            LoadDm();
+            AddNew();
+            AddNewDetail();
+        }
+        public virtual void ClearAll()
+        {
+            this.DataSet.Clear();
+        }
+        private void btnAddNew_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            CreateTran();
+        }
+        public virtual void AddNew()
+        {
+            try
+            {
+                DataRow = this.DataSet.Tables[NameTable_1].NewRow();
+                DataRow["PR_KEY"] = NHMain.GetPr_Key(NameTable_1);
+                DataTable dt = NHMain.GetTables(NameTable_1);
+                foreach (DataRow item in dt.Rows)
+                {
+                    if (item["NameTP"].Equals("smallint") || item["NameTP"].Equals("int")
+                        || item["NameTP"].Equals("bigint") || item["NameTP"].Equals("money"))
+                        DataRow[item["nameCL"].ToString()] = 0;
+                    if (item["NameTP"].Equals("smalldatetime") || item["NameTP"].Equals("date") ||
+                        item["NameTP"].Equals("datetime"))
+                        DataRow[item["nameCL"].ToString()] = DateTime.Now.ToShortDateString();
+                }
+                bMgr = this.BindingContext[DataSet, NameTable_1];
+                this.DataSet.Tables[NameTable_1].Rows.Add(DataRow);
+                bMgr.Position = this.DataSet.Tables[NameTable_1].Rows.Count - 1;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+
+        }
+        public virtual void AddNewDetail()
+        {
+            try
+            {
+                DataRow dr = this.DataTable_n.NewRow();
+                dr["PR_KEY"] = NHMain.GetPr_Key(NameTable_n);
+                dr["FR_KEY"] = PR_KEY;
+                dr["LIST_ORDER"] = 1;
+                DataTable dt = NHMain.GetTables(NameTable_n);
+                foreach (DataRow item in dt.Rows)
+                {
+                    if (item["nameCL"].ToString() != "PR_KEY" && item["nameCL"].ToString() != "FR_KEY")
+                    {
+                        if (item["NameTP"].Equals("smallint") || item["NameTP"].Equals("int")
+                            || item["NameTP"].Equals("bigint") || item["NameTP"].Equals("money"))
+                            dr[item["nameCL"].ToString()] = 0;
+                        if (item["NameTP"].Equals("smalldatetime") || item["NameTP"].Equals("date") ||
+                            item["NameTP"].Equals("datetime"))
+                            dr[item["nameCL"].ToString()] = DateTime.Now.ToShortDateString();
+                    }
+                }
+                this.DataTable_n.Rows.Add(dr);
+                this.Grid.DataSource = this.DataTable_n;
+                this.gridView1.RefreshData();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+
+        }
+
+        public virtual void Edit()
+        {
+            LoadDm();
+            LoadDataByPr_Key(PR_KEY);
+            bMgr = this.BindingContext[DataSet, NameTable_1];
+            bMgr.Position = 0;
+            BindGrid();
+        }
+        public virtual void Delete()
+        {
+            if (MessageBox.Show("Bạn chắc chắn muốn xóa chứng từ này?", "Thông báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+            {
+                NHMain.ExecuteNonQuery(NHMain.DeleteTo(NameTable_1, this.DataSet.Tables[NameTable_1].Rows[0]));
+            }
+        }
+        private void btnEdit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Edit();
+        }
+
+        private void btnSave_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            SaveRecord();
+        }
+
+        private void btnDelete_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Delete();
+        }
+
+        private void btnClose_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Dispose();
+        }
+        public virtual void EndEdit()
+        {
+            foreach (Control item in this.Controls)
+            {
+                if (!item.ContainsFocus)
+                {
+                    item.Select();
+                    break;
+                }
+            }
+            bMgr = this.BindingContext[this.DataSet, this.NameTable_1];
+            bMgr.EndCurrentEdit();
+        }
+        public virtual void SaveRecord()
+        {
+            try
+            {
+                string listsql = string.Empty;
+                this.EndEdit();
+                int index = 0;
+                if (this.NHMain.WorkingMode != WorkingMode.Offline)
+                    if (!isNew)
+                    {
+                        if (this.DataSet.Tables[NameTable_1].Rows[bMgr.Position].RowState == DataRowState.Modified ||
+                            this.DataSet.Tables[NameTable_1].Rows[bMgr.Position].RowState == DataRowState.Added)
+                            listsql = NHMain.UpdateTo(NameTable_1, this.DataSet.Tables[NameTable_1].Rows[bMgr.Position], "");
+                        foreach (DataRow item in this.DataSet.Tables[NameTable_n].Rows)
+                        {
+                            if (item.RowState == DataRowState.Modified)
+                            {
+                                listsql += NHMain.UpdateTo(NameTable_n, item, "");
+                            }
+                            if (item.RowState == DataRowState.Added)
+                            {
+                                listsql += NHMain.InsertTo(NameTable_n, this.DataSet.Tables[NameTable_n].Rows[index]);
+                            }
+                            index++;
+                        }
+                        if (listsql != "")
+                            NHMain.ExecuteNonQuery(listsql);
+                    }
+                    else
+                    {
+                        index = 0;
+                        PR_KEY = NHMain.GetPr_Key(NameTable_1) + 1;
+                        this.DataSet.Tables[NameTable_1].Rows[bMgr.Position]["PR_KEY"] = PR_KEY;
+                        NHMain.ExecuteNonQuery(NHMain.InsertTo(NameTable_1, this.DataSet.Tables[NameTable_1].Rows[bMgr.Position]));
+
+                        double t = NHMain.GetPr_Key(NameTable_n);
+                        for (int i = 0; i < this.DataSet.Tables[NameTable_n].Rows.Count; i++)
+                        {
+                            this.DataSet.Tables[NameTable_n].Rows[i]["PR_KEY"] = ++t;
+                            this.DataSet.Tables[NameTable_n].Rows[i]["FR_KEY"] = PR_KEY;
+                        }
+                        listsql = "";
+                        foreach (DataRow item in this.DataSet.Tables[NameTable_n].Rows)
+                        {
+                            if (item.RowState == DataRowState.Modified)
+                            {
+                                listsql += NHMain.UpdateTo(NameTable_n, item, "");
+                            }
+                            if (item.RowState == DataRowState.Added)
+                            {
+                                listsql += NHMain.InsertTo(NameTable_n, this.DataSet.Tables[NameTable_n].Rows[index]);
+                            }
+                            index++;
+
+
+                        }
+                        if (listsql != "")
+                            NHMain.ExecuteNonQuery(listsql);
+                    }
+                else
+                    if (!isNew)
+                    {
+                        listsql = string.Empty;
+                        //int index = 0;
+                        NHMain.Xml = new XmlExecute(NHMain, this.DataSet.Tables[NameTable_n]);
+                        NHMain.Xml.Save();
+                    }
+                    else
+                    {
+                        this.DataSet.Tables[NameTable_n].WriteXml(NHMain.StartUpPath + "//XmlData//" + NameTable_n + ".xml");
+                    }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+        public virtual void SetControls()
+        {
+
+        }
+        public virtual void LoadLayout()
+        {
+            this.gridView1.Columns.Clear();
+            GridColumn c = new GridColumn();
+            DataTable dt;
+            if (NHMain.WorkingMode == WorkingMode.Online)
+                dt = this.NHMain.GetDataByQuery("select * from sys_field where visible = 1 and table_id = '" + NameTable_n + "'", "sys_field");
+            else
+            {
+                NHMain.Xml = new XmlExecute(NHMain, "struct_" + NameTable_n);
+                dt = NHMain.Xml.DataTable;
+            }
+            if (dt.Rows.Count < 1)
+            {
+                dt = NHMain.GetTables(NameTable_n);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    c = new GridColumn();
+                    c.Name = dr["nameCL"].ToString();
+                    c.FieldName = dr["nameCL"].ToString();
+                    c.Caption = dr["nameCL"].ToString();
+                    c.BestFit();
+                    c.Visible = true;
+                    c.VisibleIndex = 0;
+                    c.OptionsColumn.AllowEdit = true;
+                    c.OptionsColumn.AllowFocus = true;
+                    this.gridView1.Columns.Add(c);
+                }
+                dt.Columns["nameCL"].ColumnName = "FIELD_ID";
+                dt.Columns["nameTP"].ColumnName = "FIELD_TYPE";
+                dt.Columns["nameTB"].ColumnName = "TABLE_ID";
+                dt.Columns["User_Type_Id"].ColumnName = "FIELD_MAX";
+                dt.Columns.Add(new DataColumn("FIELD_NAME"));
+                dt.Columns.Add(new DataColumn("VISIBLE"));
+                string l = "";
+                foreach (DataRow item in dt.Rows)
+                {
+                    l += NHMain.InsertTo("SYS_FIELD", item);
+                }
+                NHMain.ExecuteNonQuery(l);
+            }
+            else
+                foreach (DataRow dr in dt.Rows)
+                {
+                    c = new GridColumn();
+                    c.Name = dr["Field_id"].ToString();
+                    c.FieldName = dr["Field_id"].ToString();
+                    c.Caption = dr["Field_name"].ToString();
+                    c.BestFit();
+                    c.Visible = true;
+                    c.VisibleIndex = 0;
+                    c.OptionsColumn.AllowEdit = true;
+                    c.OptionsColumn.AllowFocus = true;
+                    this.gridView1.Columns.Add(c);
+                }
+            this.gridView1.RefreshEditor(true);
+            this.gridView1.RefreshData();
+            this.Grid.Refresh();
+        }
+        public virtual void BindGrid()
+        {
+            this.Grid.DataSource = this.DataTable_n;
+            this.Grid.Refresh();
+            this.LoadLayout();
+        }
+        public virtual void BindHearderControls()
+        {
+        }
+        public virtual void LoadDm()
+        {
+
+        }
+        //private void btnSave_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        //{
+        //    SaveRecord();
+        //}
+
+        public virtual void LoadData()
+        {
+            try
+            {
+                this.DataSet.Tables.Add(this.NHMain.GetDataByQuery("select * from " + NameTable_1, NameTable_1));
+                this.DataSet.Tables.Add(this.NHMain.GetDataByQuery("select * from " + NameTable_n, NameTable_n));
+                this.DataTable = this.DataSet.Tables[NameTable_1];
+                this.DataTable.TableName = NameTable_1;
+                this.DataTable_n = this.DataSet.Tables[NameTable_n];
+                this.DataTable_n.TableName = NameTable_n;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+        public virtual void LoadEmptyData()
+        {
+            try
+            {
+                this.DataSet.Tables.Add(this.NHMain.GetDataByQuery("select * from " + NameTable_1 + " where 1=0", NameTable_1));
+                this.DataSet.Tables.Add(this.NHMain.GetDataByQuery("select * from " + NameTable_n + " where 1=0", NameTable_n));
+                this.DataTable = this.DataSet.Tables[NameTable_1];
+                this.DataTable.TableName = NameTable_1;
+                this.DataTable_n = this.DataSet.Tables[NameTable_n];
+                this.DataTable_n.TableName = NameTable_n;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
+
+        public virtual void LoadDataByPr_Key(double pr_key)
+        {
+            try
+            {
+                if (this.DataSet.Tables.IndexOf(NameTable_1) >= 0) this.DataSet.Tables.Remove(NameTable_1);
+                if (this.DataSet.Tables.IndexOf(NameTable_n) >= 0) this.DataSet.Tables.Remove(NameTable_n);
+                this.DataSet.Tables.Add(this.NHMain.GetDataByQuery("select * from " + NameTable_1 + " where PR_KEY = " + pr_key, NameTable_1));
+                this.DataSet.Tables.Add(this.NHMain.GetDataByQuery("select * from " + NameTable_n + " where FR_KEY = " + pr_key, NameTable_n));
+                this.DataTable = this.DataSet.Tables[NameTable_1];
+                this.DataTable.TableName = NameTable_1;
+                this.DataTable_n = this.DataSet.Tables[NameTable_n];
+                this.DataTable_n.TableName = NameTable_n;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+        private void btnNap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            LoadData();
+            LoadDm();
+        }
+
+        private void btnAddNewDetail_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            AddNewDetail();
+        }
+
+        private void btnDeleteDetail_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.DataTable_n.Rows.Remove(this.gridView1.GetFocusedDataRow());
+        }
+
+        private void btnPrint_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            //DataSet ds = new DataSet(NameTable_1 + "_M");
+            //     ds.Tables.Add(this.NHMain.GetDataByQuery("select * from " + NameTable_1 + " where PR_KEY = " + PR_KEY, NameTable_1));
+            //     ds.Tables.Add(this.NHMain.GetDataByQuery("select * from " + NameTable_n + " where FR_KEY = " + PR_KEY, NameTable_n));
+
+            this.NHMain.Xml = new XmlExecute(NHMain, DataSet, NameTable_1);
+            FrmReport f = new FrmReport(NHMain);
+            f.LoadReport();
+        }
+    }
+}

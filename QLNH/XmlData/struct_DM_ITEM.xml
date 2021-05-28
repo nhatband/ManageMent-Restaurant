@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <struct_DM_ITEM>
+    <TABLE_ID>DM_ITEM</TABLE_ID>
+    <FIELD_ID>ACTIVE</FIELD_ID>
+    <FIELD_NAME>Hoạt động</FIELD_NAME>
+    <FIELD_TYPE>smallint</FIELD_TYPE>
+    <FIELD_MAX>1</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_ITEM>
+  <struct_DM_ITEM>
+    <TABLE_ID>DM_ITEM</TABLE_ID>
+    <FIELD_ID>ITEM_CLASS_ID</FIELD_ID>
+    <FIELD_NAME>Mã nhóm món</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>20</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_ITEM>
+  <struct_DM_ITEM>
+    <TABLE_ID>DM_ITEM</TABLE_ID>
+    <FIELD_ID>ITEM_ID</FIELD_ID>
+    <FIELD_NAME>Mã món</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>20</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_ITEM>
+  <struct_DM_ITEM>
+    <TABLE_ID>DM_ITEM</TABLE_ID>
+    <FIELD_ID>ITEM_NAME</FIELD_ID>
+    <FIELD_NAME>Tên món</FIELD_NAME>
+    <FIELD_TYPE>nvarchar</FIELD_TYPE>
+    <FIELD_MAX>50</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_ITEM>
+  <struct_DM_ITEM>
+    <TABLE_ID>DM_ITEM</TABLE_ID>
+    <FIELD_ID>UNIT_ID</FIELD_ID>
+    <FIELD_NAME>Mã đơn vị tính</FIELD_NAME>
+    <FIELD_TYPE>int</FIELD_TYPE>
+    <FIELD_MAX>2</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_ITEM>
+  <struct_DM_ITEM>
+    <TABLE_ID>DM_ITEM</TABLE_ID>
+    <FIELD_ID>VAT_TAX_ID</FIELD_ID>
+    <FIELD_NAME>Mã thuế</FIELD_NAME>
+    <FIELD_TYPE>int</FIELD_TYPE>
+    <FIELD_MAX>2</FIELD_MAX>
+    <VISIBLE>1</VISIBLE>
+  </struct_DM_ITEM>
+</DocumentElement>

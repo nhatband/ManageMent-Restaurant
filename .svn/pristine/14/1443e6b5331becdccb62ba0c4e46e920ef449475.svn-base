@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <connectionStrings>
+    <add name="StringConn" connectionString="Server=.\SQL;DataBase=MSALE;UID=sa;PWD=11;"/>
+  </connectionStrings>
+    <system.serviceModel>
+        <bindings />
+        <client />
+    </system.serviceModel>
+</configuration>

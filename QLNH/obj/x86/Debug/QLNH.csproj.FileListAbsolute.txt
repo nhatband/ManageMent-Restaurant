@@ -1,0 +1,172 @@
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\ThietKe\iEnvironment.baml
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\ThietKe\iItem.baml
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\CoSo\uLogin.g.cs
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\ThietKe\iDesign.g.cs
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\ThietKe\iEnvironment.g.cs
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\ThietKe\iItem.g.cs
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\ThietKe\MainWindow.g.cs
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH_Content.g.cs
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH_MarkupCompile.cache
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH_MarkupCompile.lref
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\CoSo\uLogin.baml
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\ThietKe\iDesign.baml
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\ThietKe\MainWindow.baml
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.g.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.BanHang.FrmCheBienMonAn.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.BanHang.FrmDatBan.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.BanHang.FrmNhapNguyenLieu.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.BanHang.FrmSale.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.BanHang.WebControlForm.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.CauTruc.iCalculate.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.CauTruc.iSpinText.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.CauTruc.iCandenla.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.CauTruc.iTextBox.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.CauTruc.iComboBox.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.CoSo.FrmConfig.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.CoSo.FrmDataList.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.CoSo.FrmEditDetail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.CoSo.FrmFinding.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.CoSo.FrmReport.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.CoSo.FrmTransaction.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.CoSo.ReportManager.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDmSale_Price_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_CustomerType_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Employees_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Employee_Part_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Levels_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Pay_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Unit_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Vat_Tax_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Custumer_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_ExportType_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Floors_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Item_Class_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Item_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Parts_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Providers_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Table_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Warehouses_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_WorkStations_Detail.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.HeThong.FrmChangePass.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.HeThong.FrmLogin.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.MainForm.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.Properties.Resources.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.ThietKe.FrmDesignTable.resources
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.exe.licenses
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\QLNH.exe.config
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.exe
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.pdb
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\QLNH.exe
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\QLNH.pdb
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.exe.manifest
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\obj\x86\Debug\QLNH.application
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\QLNH.exe.manifest
+D:\Đồ án thực tập\Code\Res_Manage\QLNH\QLNH.application
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.csprojAssemblyReference.cache
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\ThietKe\iEnvironment.baml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\ThietKe\iItem.baml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\CoSo\uLogin.g.cs
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\ThietKe\iDesign.g.cs
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\ThietKe\iEnvironment.g.cs
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\ThietKe\iItem.g.cs
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\ThietKe\MainWindow.g.cs
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH_Content.g.cs
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH_MarkupCompile.cache
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH_MarkupCompile.lref
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\CoSo\uLogin.baml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\ThietKe\iDesign.baml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\ThietKe\MainWindow.baml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.g.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.BanHang.FrmCheBienMonAn.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.BanHang.FrmDatBan.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.BanHang.FrmNhapNguyenLieu.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.BanHang.FrmSale.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.BanHang.WebControlForm.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.CauTruc.iCalculate.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.CauTruc.iSpinText.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.CauTruc.iCandenla.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.CauTruc.iTextBox.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.CauTruc.iComboBox.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.CoSo.FrmConfig.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.CoSo.FrmDataList.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.CoSo.FrmEditDetail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.CoSo.FrmFinding.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.CoSo.FrmReport.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.CoSo.FrmTransaction.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.CoSo.ReportManager.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDmSale_Price_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_CustomerType_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Employees_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Employee_Part_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Levels_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Pay_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Unit_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Vat_Tax_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Custumer_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_ExportType_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Floors_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Item_Class_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Item_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Parts_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Providers_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Table_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_Warehouses_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.DanhMuc.FrmDm_WorkStations_Detail.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.HeThong.FrmChangePass.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.HeThong.FrmLogin.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.MainForm.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.Properties.Resources.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.ThietKe.FrmDesignTable.resources
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.csproj.GenerateResource.cache
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.exe.licenses
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.csproj.CoreCompileInputs.cache
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.exe
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.pdb
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.exe.manifest
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.application
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\obj\x86\Debug\QLNH.csproj.CopyComplete
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\QLNH.exe.config
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\QLNH.exe.manifest
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\QLNH.application
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\QLNH.exe
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\QLNH.pdb
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.BonusSkins.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.Data.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.OfficeSkins.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.PivotGrid.v10.2.Adomd.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.Utils.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraBars.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraEditors.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraGrid.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraNavBar.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraPivotGrid.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraPrinting.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraReports.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.RichEdit.v10.2.Core.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraRichEdit.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraLayout.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraTreeList.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.PivotGrid.v10.2.Core.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraCharts.v10.2.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.Charts.v10.2.Core.dll
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.Data.v10.2.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.PivotGrid.v10.2.Adomd.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.Utils.v10.2.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraBars.v10.2.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.RichEdit.v10.2.Core.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraEditors.v10.2.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraGrid.v10.2.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraNavBar.v10.2.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraRichEdit.v10.2.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraPivotGrid.v10.2.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraLayout.v10.2.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraPrinting.v10.2.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraTreeList.v10.2.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraReports.v10.2.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.PivotGrid.v10.2.Core.xml
+C:\Users\duyhd\Desktop\Projects\Res_Manage\QLNH\DevExpress.XtraCharts.v10.2.xml

@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<DM_TABLESS>
+  <DM_TABLES>
+    <TABLE_ID>01</TABLE_ID>
+    <TABLE_NAME>Bàn 1</TABLE_NAME>
+    <TOTAL_CHAIR>4</TOTAL_CHAIR>
+    <RANK_ID>2</RANK_ID>
+    <ACTIVE>1</ACTIVE>
+    <VALUE_ID>0</VALUE_ID>
+  </DM_TABLES>
+</DM_TABLESS>
